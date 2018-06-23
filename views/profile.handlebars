@@ -1,0 +1,77 @@
+<div class="row" style="margin-top: .5%">
+    <div class="col s8"><span class="flow-text">
+        <h4 class="center">Welcome!</h4><hr>
+    </span>
+    <div class="row">
+        <div class="col s12">
+            <table class="striped">
+                    <thead>
+                        <tr>
+                            <th>Category</th>
+                            <th>Activity</th>
+                            <th>Rating</th>
+                            <th>Price Range</th>
+                            {{!-- <th></th> --}}
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {{#each activities}}
+                            <tr>
+                                <td> {{ categories }} </td>
+                                <td> {{ activity }} </td>
+                                <td> {{ rating }} </td>
+                                <td> ${{ cost }} </td>
+                            {{!-- <td><a href="#" class="right">More Info</a></td> --}}
+                            </tr>
+                        {{/each}}
+                    </tbody>
+                    </table>
+        </div>
+    </div>
+    </div>
+        <div class="col s4"><span class="flow-text">
+            <h4 class="center">Budgeting</h4><hr>
+            </span>
+                <div class="row">
+                <div class="col s12">
+                    <table class="striped">
+                        <thead>
+                        <tr>
+                            <th>Description</th>
+                            <th>Cost</th>
+                            {{!-- <th>Remaining</th> --}}
+                        </tr>
+                        </thead>
+                        <tbody>
+                        {{#each budgets}}
+                        <tr>
+                            <td>{{ description }}</td>
+                            <td>${{ cost }}</td>
+                        </tr>
+                        {{/each}}
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+            <div class="fixed-action-btn">
+                <a href="#" class="btn-floating grey darken-4 btn-large"><i class="large material-icons">menu</i></a>
+                <ul>
+                    <li><a href="add.html" class="btn-floating indigo darken-4 btn-large" style="transform: scaleY(0.4) scaleX(0.4) translateY(40px) translateX(0px); opacity: 0;"><i class="large material-icons">add</i></a></li>
+                    <li><a href="budget.html" class="btn-floating green darken-4 btn-large" style="transform: scaleY(0.4) scaleX(0.4) translateY(40px) translateX(0px); opacity: 0;"><i class="large material-icons">attach_money</i></a></li>
+                </ul>
+            </div>
+
+        <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/js/materialize.min.js"></script>
+
+
+                <div class="fixed-action-btn">
+                <a href="#" class="btn-floating grey darken-4 btn-large"><i class="large material-icons">menu</i></a>
+                <ul>
+                    <li><a href="/add" class="btn-floating indigo darken-4 btn-large" style="transform: scaleY(0.4) scaleX(0.4) translateY(40px) translateX(0px); opacity: 0;"><i class="large material-icons">add</i></a></li>
+                    <li><a href="/budget" class="btn-floating green darken-4 btn-large" style="transform: scaleY(0.4) scaleX(0.4) translateY(40px) translateX(0px); opacity: 0;"><i class="large material-icons">attach_money</i></a></li>
+                </ul>
+            </div>

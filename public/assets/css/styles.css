@@ -1,0 +1,40 @@
+body, nav {
+    font-family: 'Julius Sans One', sans-serif;
+}
+.indicator-item.active, .btn {
+    background-color: #212121 !important;
+}
+.small-text {
+    font-size: 18px;
+    color: white !important;
+}
+.card-content {
+    background-color: #2E2E2E !important;
+    padding: 20px 20px 10px !important;
+}
+.card-action {
+    background-color: #212121 !important;
+    padding:  10px 20px 10px !important;
+}
+.carousel .carousel-item {
+    visibility: visible !important;
+}
+.carousel1 {
+    background-image: url("../images/sample/sample1.jpg");
+    background-size: cover;
+}
+.carousel2 {
+    background-image: url("../images/sample/sample2.png");
+    background-size: cover;
+}
+.carousel3 {
+    background-image: url("../images/sample/sample3.jpg");
+    background-size: cover;
+}
+.carousel4 {
+    background-image: url("../images/sample/sample4.jpg");
+    background-size: cover;
+}
+.smallfont {
+    font-size: 20px;
+}

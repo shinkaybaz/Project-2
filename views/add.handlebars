@@ -1,0 +1,57 @@
+<h3 style="margin-top: 3%">Add a Thing to Do!</h3>
+<div class="row">
+    <form class="col s12">
+        <div class="row">
+            <div class="input-field col s6">
+                {{!-- <input id="category" type="text" class="validate">
+                <label for="category">Category</label> --}}
+
+                    <select id ="category">
+                        <option value="" disabled selected></option>
+                        <option value="Outdoors">Outdoors</option>
+                        <option value="Indoors">Indoors</option>
+                        <option value="Casual">Casual</option>
+                    </select>
+                    <label>Category</label>
+
+            </div>
+            <div class="input-field col s6">
+                <input id="activity" type="text" class="validate">
+                <label for="activity">Activity</label>
+            </div>
+        </div>
+        <div class="row">
+            <div class="input-field col s6">
+                {{!-- <input id="rating" type="text" class="validate">
+                <label for="rating">Rating</label> --}}
+                    <select id ="rating">
+                        <option value="" disabled selected></option>
+                        <option value="5">5</option>
+                        <option value="4">4</option>
+                        <option value="3">3</option>
+                        <option value="2">2</option>
+                        <option value="1">1</option>
+                    </select>
+                    <label>Rate The Activity</label>
+            </div>
+            <div class="input-field col s6">
+                <input id="price" type="text" class="validate">
+                <label for="price">Price</label>
+            </div>
+        </div>
+        {{!-- <label hidden id="UserId">{{id}}</label> --}}
+        {{!-- <input type="hidden" id="UserId" value={{id}}/> --}}
+        {{!-- <div class="row">
+            <div class="input-field col s12">
+                <textarea type="description" id="description" class="materialize-textarea" style="height: 176px;"></textarea>
+                <label for="description">Description</label>
+            </div>
+        </div> --}}
+    </form>
+</div>
+
+    <button id="activity_submit" class="btn waves-effect waves-light grey darken-4" type="submit" name="action">Add
+        <i class="material-icons right">send</i>
+    </button>
+
+    

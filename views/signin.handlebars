@@ -1,0 +1,46 @@
+{{!-- <div class="row" style="margin-top: .5%">
+    <div class="col s12"><span class="flow-text">
+        <h4 class="center">Log In</h4><hr>
+        <div class="row">
+                <div class="input-field col s12">
+                    <i class="material-icons prefix">mail_outline</i>
+                    <input class="validate" id="email" type="email">
+                    <label for="email" data-error="wrong" data-success="right">Email</label>
+                </div>
+                </div>
+
+        <div class="row">
+            <div class="input-field col s12">
+                <i class="material-icons prefix">lock_outline</i>
+                <input id="password" type="password">
+                <label for="password">Password</label>
+            </div>
+            </div>
+            <div class="col s12">
+                <a href="#" id="signInBtn" class="btn waves-effect waves-light col s12">Login</a>
+            </div>
+    </span></div>
+</div> --}}
+
+
+<h4 class="center">Log In</h4><hr>
+  <div class="col-md-3 mb-3">
+    <form id="signin" name="signin" method="post" action="/signin">
+        <div class="row">
+            <div class="input-field col s12">
+                <div class="row">
+                <i class="material-icons prefix">mail_outline</i>
+                <label for="email">Email Address</label>
+                <input type="email" class="form-control" name="email" aria-describedby="emailHelp">
+                </div>
+            </div>
+           <div class="input-field col s12">
+               <div class="row">
+                <i class="material-icons prefix">lock_outline</i>
+            <label for="password">Password</label>
+            <input type="password" class="form-control" name="password">
+        </div></div>
+        <button type="submit" class="btn btn-login btn-primary waves-effect waves-light col s12">Login</button>
+    </form>
+  </div>
+
